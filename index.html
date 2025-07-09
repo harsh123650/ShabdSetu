@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ShabdSetu – Voice Translator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🗣️ ShabdSetu</h1>
+    <p class="subheading">Speak in your language – Listen in another!</p>
+
+    <!-- Language Selection -->
+    <div class="language-select">
+      <div>
+        <label for="sourceLang">From:</label>
+        <select id="sourceLang">
+          <option value="en">English</option>
+          <option value="hi">Hindi</option>
+          <option value="mr">Marathi</option>
+          <option value="gu">Gujarati</option>
+          <option value="ml">Malayalam</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="targetLang">To:</label>
+        <select id="targetLang">
+          <option value="en">English</option>
+          <option value="hi">Hindi</option>
+          <option value="mr">Marathi</option>
+          <option value="gu">Gujarati</option>
+          <option value="ml">Malayalam</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- 🎤 Mic Button -->
+    <button id="startBtn">🎤 Speak</button>
+
+    <!-- ✍️ Text Input -->
+    <textarea 
+      id="textInput" 
+      placeholder="Or type here..." 
+      rows="3"
+      style="margin-top: 1rem; width: 100%; padding: 10px; border-radius: 8px; border: none; font-size: 1rem;">
+    </textarea>
+    <button id="typeTranslateBtn">📝 Translate Typed Text</button>
+
+    <!-- 🔊 Output -->
+    <div class="output">
+      <h3>Translated Text:</h3>
+      <p id="translatedText">...</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
