@@ -10,4 +10,6 @@ Hosted on Render for public use
 
 Tech: HTML, CSS, JS, REST APIs, Web Speech API
 
+## 🌍 [Live Demo](https://shabdsetu.onrender.com/)
+
 ![Home Page](shabdsetu.png)
